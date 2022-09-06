@@ -1,9 +1,12 @@
-import React from 'react'
+import Head from "next/head"
 
-const Layout = ({children}) => {
+const Layout = ({children, pagina}) => {
   return (
     <div>
-      <h1>Desde Layout</h1>
+      <Head>
+        <title>GuitarLA - {pagina}</title>
+        <meta name="description" content="Sitio web de venta d eguitarras" />
+      </Head>
       {children}
     </div>
   )
